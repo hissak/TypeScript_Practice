@@ -11,9 +11,13 @@ function signUpUser(name: string, email: string, password: string,
   
 }
 
+let loginUser = (email: string, password: string, isPaid: boolean = false) => {
+}
+
 addTwo(2); 
 getUpper('hello');
 signUpUser('John', 'johnappleseed@gmail.com', 'password', true);
+loginUser('johnappleseed@gmail.com', 'password');
 
 
 export default addTwo;
