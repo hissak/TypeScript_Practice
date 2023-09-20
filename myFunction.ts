@@ -19,6 +19,17 @@ let getValue = (myVl: number): number => {
 }
 
 const heroes = ['thor', 'ironman', 'spiderman'];
+heroes.map((hero): string => {
+  return hero.toUpperCase();
+});
+
+function consoleError(errmsg: string): void {
+  console.log(errmsg);
+}
+
+function handleError(errmsg: string): never {
+  throw new Error(errmsg);
+}
 
 addTwo(2); 
 getUpper('hello');
