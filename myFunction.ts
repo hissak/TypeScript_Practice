@@ -14,6 +14,12 @@ function signUpUser(name: string, email: string, password: string,
 let loginUser = (email: string, password: string, isPaid: boolean = false) => {
 }
 
+let getValue = (myVl: number): number => {
+  return myVl;
+}
+
+const heroes = ['thor', 'ironman', 'spiderman'];
+
 addTwo(2); 
 getUpper('hello');
 signUpUser('John', 'johnappleseed@gmail.com', 'password', true);
