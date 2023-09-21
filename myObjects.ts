@@ -6,7 +6,9 @@ const User = {
   isActive: true,
 };
 
-function createUser({name: string, isActive: boolean}){}
+function createUser(user: User): User{
+  return user;
+}
 
 createUser(User);
 
@@ -16,5 +18,13 @@ function createCourse():{name: string, isActive: boolean}{
     isActive: true,
   }
 }
+
+type User = {
+  name: string,
+  email: string,
+  isActive: boolean,
+}
+
+type Mystring = string;
 
 export {}
