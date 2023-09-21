@@ -10,7 +10,7 @@ function createUser(user: User): User{
   return user;
 }
 
-createUser(User);
+// createUser(User);
 
 function createCourse():{name: string, isActive: boolean}{
   return {
@@ -20,10 +20,22 @@ function createCourse():{name: string, isActive: boolean}{
 }
 
 type User = {
+  readonly _id: string,
   name: string,
   email: string,
   isActive: boolean,
+  creditCard?: number
 }
+
+let myUser: User = {
+  _id: '123',
+  name: 'John',
+  email: '1@1.com',
+  isActive: true,
+  creditCard: 123456789
+}
+
+
 
 type Mystring = string;
 

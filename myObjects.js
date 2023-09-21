@@ -7,13 +7,20 @@ var User = {
     password: 'password',
     isActive: true,
 };
-function createUser(_a) {
-    var string = _a.name, boolean = _a.isActive;
+function createUser(user) {
+    return user;
 }
-createUser(User);
+// createUser(User);
 function createCourse() {
     return {
         name: 'React',
         isActive: true,
     };
 }
+var myUser = {
+    _id: '123',
+    name: 'John',
+    email: '1@1.com',
+    isActive: true,
+    creditCard: 123456789
+};
