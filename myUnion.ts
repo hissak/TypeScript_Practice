@@ -23,3 +23,5 @@ function getDbId(id: number | string) {
 }
 
 const data: number[] | string[] = [1, 2, 3, 4, 5];
+
+let seatAllotment: 'aisle' | 'window' | 'middle' = 'aisle';
