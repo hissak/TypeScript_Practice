@@ -21,3 +21,5 @@ function getDbId(id: number | string) {
     return id.toFixed();
   }
 }
+
+const data: number[] | string[] = [1, 2, 3, 4, 5];
