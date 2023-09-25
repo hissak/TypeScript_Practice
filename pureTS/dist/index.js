@@ -1,3 +1,9 @@
 "use strict";
-console.log('Hello TypeScript');
-console.log('Hello TypeScript x2');
+class User {
+    constructor(email, name) {
+        this.city = 'Seoul';
+        this.email = email;
+        this.name = name;
+    }
+}
+const user = new User('h', 'h');

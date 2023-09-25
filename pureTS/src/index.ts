@@ -1,7 +1,7 @@
 class User {
   email: string;
   name: string;
-  city: string;
+  private readonly city: string = 'Seoul';
   constructor(email: string, name: string){
     this.email = email;
     this.name = name;
@@ -9,3 +9,4 @@ class User {
 }
 
 const user = new User('h', 'h')
+
