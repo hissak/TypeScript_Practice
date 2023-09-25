@@ -6,6 +6,12 @@ class User {
     this.email = email;
     this.name = name;
   }
+  get getName(){
+    return this.name;
+  }
+  set setName(name: string){
+    this.name = name;
+  }
 }
 
 const user = new User('h', 'h')
