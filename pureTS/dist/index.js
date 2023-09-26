@@ -13,3 +13,12 @@ class User {
     }
 }
 const user = new User('h', 'h');
+class SubUser extends User {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCity(city) {
+        this.city = city;
+    }
+}
