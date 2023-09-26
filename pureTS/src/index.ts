@@ -1,7 +1,7 @@
 class User {
   email: string;
   name: string;
-  protected readonly city: string = 'Seoul';
+  protected city: string = 'Seoul';
   constructor(email: string, name: string){
     this.email = email;
     this.name = name;
