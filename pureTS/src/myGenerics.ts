@@ -29,3 +29,38 @@ function getSearchProducts<T>(products: T[]): T {
 const getMoreSearchProducts = <T,>(products: T[]): T => {
   return products[0];
 } //comma added after T to indicate that T is a generic type
+
+interface Database {
+  connection: string;
+  username: string;
+  password: string;
+}
+
+
+function anotherFunction<T, U extends Database>(val1: T, val2: U): object {
+  return {
+    val1,
+    val2
+  };
+}
+
+anotherFunction(123, {connection: "localhost", username: "root", password: "1234"});
+
+
+interface Quiz{
+  name: string;
+  type: string;
+}
+
+interface Course{
+  name: string,
+  subject: string,
+  author: string
+}
+
+class Sellable<T>{
+  public cart: T[] = [];
+  addToCart(item: T){
+    this.cart.push(item);
+  }
+}
