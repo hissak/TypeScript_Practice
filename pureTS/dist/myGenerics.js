@@ -12,3 +12,9 @@ function identityThree(val) {
 } // Type can be shortened to T
 identityThree(123);
 identityThree({ brand: "Coke", id: 123 });
+function getSearchProducts(products) {
+    return products[0];
+}
+const getMoreSearchProducts = (products) => {
+    return products[0];
+}; //comma added after T to indicate that T is a generic type

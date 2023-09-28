@@ -21,3 +21,11 @@ interface Bottle{
 }
 
 identityThree<Bottle>({brand: "Coke", id: 123});
+
+function getSearchProducts<T>(products: T[]): T {
+  return products[0];
+}
+
+const getMoreSearchProducts = <T,>(products: T[]): T => {
+  return products[0];
+} //comma added after T to indicate that T is a generic type
