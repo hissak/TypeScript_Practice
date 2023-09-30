@@ -22,3 +22,17 @@ function isAdmin(account: User | Admin){
   }
   return false;
 }
+
+type Fish = {swim: () => void};
+type Bird = {fly: () => void};
+
+function isFish(pet: Fish | Bird): pet is Fish{
+  return (pet as Fish).swim() !== undefined;
+}
+
+function getFood(pet: Fish | Bird){
+  if('swim' in pet){
+    return pet.swim();
+  }
+  return pet.fly();
+}
